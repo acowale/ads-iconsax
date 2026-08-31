@@ -1,44 +1,44 @@
-<h1 align="center">iconsax for React</h1>
-
-<a href="https://www.npmjs.com/package/iconsax-react-nativejs">for React Native</a>
+<h1 align="center">@acowale/ads-iconsax</h1>
 
 <p align="center">
-  1000 icons in 6 different styles, total 6000 icons | 
-Perfectly balance | 
+  Iconsax icon pack for React |
+1000 icons in 6 different styles |
 24px grid-based
 <p>
 
-<p align="center">
-  <a href="https://iconsax.erfan.ee/"><strong>Browse icons at site</strong></a>
-</p>
-<br>
 <br>
 
 ## Installation
 
+This package is published to GitHub Packages, so the `@acowale` scope needs to point
+at that registry first:
+
 ```bash
-yarn add iconsax-reactjs
-# or
-npm i iconsax-reactjs
+npm config set @acowale:registry https://npm.pkg.github.com
+```
+
+Then install (use `pnpm` — the npm client has failed on this package):
+
+```bash
+pnpm add @acowale/ads-iconsax
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-//import icon.
-import { EmojiHappy } from 'iconsax-reactjs';
+import { Home } from '@acowale/ads-iconsax';
 
 const Example = () => {
   // then use it as a normal React Component
-  return <EmojiHappy />;
+  return <Home />;
 };
 ```
 
-You can configure Icons with inline props:
+You can configure icons with inline props:
 
 ```jsx
-<EmojiHappy color="#eee" variant="Bulk" size={54} />
+<Home color="#eee" variant="Bold" size={54} />
 ```
 
 ## Props
@@ -51,11 +51,11 @@ You can configure Icons with inline props:
 
 ---
 
-## Contributing
+## Attribution
 
-See
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+Fork of [iconsax-react](https://github.com/rendinjast/iconsax-react) by Erfan Khadivar,
+published under the `@acowale` scope for internal use. Artwork from the Iconsax icon set.
 
 ## License
 
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/LICENSE">MIT</a>
+[MIT](./LICENSE)
