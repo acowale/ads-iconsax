@@ -1,19 +1,19 @@
 {
-  "name": "iconsax-reactjs",
+  "name": "@acowale/ads-iconsax",
   "version": "0.0.8",
   "description": "Iconsax icon pack for React",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "homepage": "https://iconsax.erfan.ee",
+  "homepage": "https://github.com/acowale/ads-iconsax",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rendinjast/iconsax-react.git",
+    "url": "git+https://github.com/acowale/ads-iconsax.git",
     "directory": "packages/iconsax-react"
   },
   "bugs": {
-    "url": "https://github.com/rendinjast/iconsax-react/issues"
+    "url": "https://github.com/acowale/ads-iconsax/issues"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -23,7 +23,7 @@
   "scripts": {
     "preBuild": "rm -rf dist",
     "build:bundle": "rollup --config rollup.config.js",
-    "build": "yarn preBuild && yarn build:bundle"
+    "build": "npm run preBuild && npm run build:bundle"
   },
   "keywords": [
     "icons",
