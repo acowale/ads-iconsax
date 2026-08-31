@@ -23,7 +23,7 @@
   "scripts": {
     "preBuild": "rm -rf dist",
     "build:bundle": "rollup --config rollup.config.js",
-    "build": "yarn preBuild && yarn build:bundle"
+    "build": "npm run preBuild && npm run build:bundle"
   },
   "keywords": [
     "icons",
